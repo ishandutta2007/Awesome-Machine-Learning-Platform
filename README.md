@@ -1,285 +1,187 @@
-# Awesome-Machine-Learning-Platform
-
-## Top Machine Learning Platform Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on End-to-End MLOps, Model Serving & Self-Hosted ML Infrastructure*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial machine learning platforms** and **open-source projects** that cover the full ML lifecycle — from data preparation and experiment tracking to model deployment, monitoring, and governance — without vendor lock-in.
-
-
-
-**Examples** include Amazon SageMaker, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Databricks Machine Learning, DataRobot AI Platform, Domino Data Lab, H2O AI Cloud, Dataiku DSS, Paperspace Gradient, and Saturn Cloud (the category leaders).
-
-
-
-**Open-source emphasis**: Machine learning platforms are one of the strongest open-source domains. **Kubeflow** recently graduated from CNCF, solidifying its status as the standard for cloud-native AI operations . **MLflow** remains the de facto experiment tracking and model registry standard. **Feast** leads as the open-source feature store . **MLOX** brings lightweight, backend-agnostic MLOps orchestration . **ZebraOps** delivers local-first MLOps for small teams . **Potato** and **AnyLabeling** handle data annotation . **P-ML** and **ModelForge** provide AutoML . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Amazon SageMaker](https://aws.amazon.com/sagemaker/)**  
-
-  **AWS's fully managed ML platform** — the widest feature set covering data labeling, training, tuning, deployment, and monitoring . **Deep AWS integration** with IAM, VPC, and Fargate . **Trade-off**: Highly fragmented pricing model — training, hosting, pipelines, and feature stores are billed separately, making costs unpredictable without strict FinOps governance  . **Best for AWS-native organizations with dedicated ML platform teams** .
-
-
-
-- **[Google Cloud Vertex AI](https://cloud.google.com/vertex-ai)**  
-
-  **Google's unified ML platform** — deeply integrated with BigQuery and Google's data stack . **Cleaner pricing model with Committed Use Discounts (CUDs)** that apply across the platform  . **AutoML and custom training** with strong MLOps capabilities . **Best for data-heavy organizations already invested in Google Cloud** .
-
-
-
-- **[Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/products/machine-learning/)**  
-
-  **Microsoft's enterprise ML platform** — the default choice for Azure-first organizations . **Leverages existing Enterprise Agreements and Azure Hybrid Benefit for compute**  . **Integration with Azure OpenAI is the primary differentiator** . **Best for Microsoft-centric enterprises** .
-
-
-
-- **[Databricks Machine Learning](https://www.databricks.com/)**  
-
-  **Unified data and AI platform** — lakehouse architecture with MLflow integration . **Best for organizations using Spark and Delta Lake** .
-
-
-
-- **[DataRobot AI Platform](https://www.datarobot.com/)**  
-
-  **Enterprise AutoML and AI platform** — automated model building, deployment, and governance . **Best for enterprises wanting automated ML without deep data science teams** .
-
-
-
-- **[Domino Data Lab](https://www.dominodatalab.com/)**  
-
-  **Enterprise MLOps platform** — reproducible research, model deployment, and governance . **Best for regulated industries** .
-
-
-
-- **[H2O AI Cloud](https://h2o.ai/)**  
-
-  **Enterprise AI platform** — AutoML, feature store, and model deployment . **Best for enterprises wanting open-core AI infrastructure** .
-
-
-
-- **[Dataiku DSS](https://www.dataiku.com/)**  
-
-  **Collaborative data science platform** — visual ML, data preparation, and deployment . **Best for teams wanting visual and code-based workflows** .
-
-
-
-- **[Paperspace Gradient](https://www.paperspace.com/)**  
-
-  **Cloud ML platform** — GPU-powered notebooks and training workflows . **Best for individual developers and small teams** .
-
-
-
-- **[Saturn Cloud](https://saturncloud.io/)**  
-
-  **Cloud platform for data science and ML** — Dask and GPU support . **Best for parallel computing workloads** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### End-to-End MLOps Platforms
-
-
-
-- **[Kubeflow](https://github.com/kubeflow/kubeflow)**  
-
-  **The CNCF-graduated standard for cloud-native AI operations**, Apache-2.0 licensed with **15,000+ GitHub stars**  . **Provides the entire data & AI lifecycle** — Kubeflow Pipelines for workflow orchestration, Katib for hyperparameter tuning, Training Operator for distributed training (PyTorch, TensorFlow, MPI, XGBoost), and KServe for model serving . **Completed a third-party security audit** and maintains CII Best Practices Badge  . **Used by Capital One, DHL, and organizations worldwide**  . **Best for Kubernetes-native ML platforms** .
-
-
-
-- **[MLOX](https://github.com/matteospanio/mlox)**  
-
-  **Open-source MLOps for the rest of us**, open-source  . **Backend-agnostic** — same service definitions target Docker, Kubernetes, Native, or Connector backends . **Lightweight and minimal operational overhead** — reuses existing hardware and reduces resource consumption . **Service-centric orchestration** — users select services (MLflow, Airflow, OpenBao, Registry3) through CLI, TUI, or Web UI . **Declarative and idempotent** — infrastructure-as-code discipline without manual configuration . **Best for small teams and experimentation**  .
-
-
-
-- **[ZebraOps](https://github.com/flexiana/zebraops)**  
-
-  **Local-first, open-source MLOps platform for ML beginners and small teams**, Apache-2.0 licensed  . **Full lifecycle CLI** — init, ingest, train, eval, promote, serve, monitor . **Contract-first model specs and immutable dataset manifests** . **Integrated stack**: MLflow for tracking, Prefect for orchestration, FastAPI for serving, Evidently for drift monitoring, Docker Compose for local devstack (Postgres, MinIO, Grafana, Prometheus) . **Profile adapters for Vast, SageMaker, Vertex** . **Best for local-first MLOps**  .
-
-
-
-- **[LUML](https://app.luml.ai/)**  
-
-  **Open-source MLOps and LLMOps platform where engineers and AI agents work side by side**, open-source  . **Prisma agent module** — AutoResearch-style AI agents that autonomously design, iterate on, and build ML solutions . **Flow** — real-time experiment tracking for classical ML runs alongside LLM traces and evaluations . **Core** — model and artifact registry with full lineage, one-click deployments, and monitoring . **Best for agent-assisted ML development**  .
-
-
-
-### Experiment Tracking & Model Registry
-
-
-
-- **[MLflow](https://github.com/mlflow/mlflow)**  
-
-  **The de facto standard for ML lifecycle management**, Apache-2.0 licensed with **20,000+ GitHub stars** . **Experiment tracking, model registry, projects, and recipes** . **Works with any ML library and language** . **The foundation for ZebraOps and many other platforms**  . **Best for experiment tracking and model registry** .
-
-
-
-- **[mlsolid](https://pkg.go.dev/github.com/zeddo123/mlsolid)**  
-
-  **A solid alternative to MLflow, written in Go with Redis and S3**, open-source  . **Fast** — Redis-backed metadata with sorted-set indexes for stable cursor-based pagination at scale . **Production focused and easy to deploy** — single Go binary plus Redis and S3-compatible bucket, no JVM/Python server stack . **Dumb client** — client only sends experiments, metrics, and artifacts; no business logic to keep in sync . **Model registry with versioning** — register models per run, tag versions, stream back efficiently over gRPC . **Automated benchmarking** — attach Docker image to registry; new model versions run against dataset automatically . **Best-model selection** — query top run across benchmark by metrics . **Polyglot clients** — gRPC SDKs generated for multiple languages . **Best for production-grade experiment tracking**  .
-
-
-
-- **[vmn-exp](https://pypi.org/project/vmn-exp/)**  
-
-  **Experiment platform built on vmn**, open-source  . **Experiment tracking, model registry, snapshots, and web dashboard** . **Capturing runs from a git checkout** . **Lightweight Python package** . **Best for simple experiment tracking**  .
-
-
-
-### Feature Stores
-
-
-
-- **[Feast](https://github.com/feast-dev/feast)**  
-
-  **The leading open-source feature store**, Apache-2.0 licensed  . **Makes features consistently available for training and serving** — manages offline store (historical data for batch scoring/model training), low-latency online store (real-time prediction), and feature server (serve pre-computed features online) . **Avoids data leakage** — generates point-in-time correct feature sets so future feature values don't leak to models during training . **Decouples ML from data infrastructure** — single data access layer abstracts feature storage from retrieval, ensuring models remain portable across training/serving and batch/real-time . **Supports Kafka, Kinesis, Snowflake, BigQuery, S3, Redshift, GCS, Parquet** . **Best for production ML feature management**  .
-
-
-
-### AutoML & Model Optimization
-
-
-
-- **[P-ML](https://github.com/HuuPhuoc2411/P-ML)**  
-
-  **End-to-end AutoML framework for deploying classical ML models on resource-constrained devices**, open-source  . **Automates data splitting, model selection, hyperparameter optimization, and generation of optimized Arduino-compatible C++ libraries** . **Integrates Optuna-based hyperparameter tuning with stratified data splitting (SPXY, K-Fold)** . **Achieves over 90% accuracy on sensor data classification while maintaining small memory footprint** . **Directly deployable on Arduino Uno, Nano, and ESP32** . **Best for embedded IoT ML**  .
-
-
-
-- **[ModelForge](https://pypi.org/project/autoforge-engine/)**  
-
-  **Transparent, local-first AutoML experimentation for reproducible and inspectable ML**, open-source  . **Regression and classification workflows** — data profiling, column intelligence, data-quality auditing, preprocessing, feature engineering, feature selection . **Model screening, cross-validation, and ranking** . **Saved model pipelines and predictions from CLI or Python** . **Local experiment tracking, run metadata, and reproducibility information** . **Optional boosting models (XGBoost, LightGBM, CatBoost) and hyperparameter optimization (Optuna)** . **Best for local-first AutoML**  .
-
-
-
-- **[NiaAML](https://pypi.org/project/NiaAML/)**  
-
-  **Python automated machine learning framework**, MIT licensed  . **PipelineOptimizer** — run optimization for classification and regression tasks . **Feature transform algorithms**: Normalizer, StandardScaler, MaxAbsScaler, QuantileTransformer, RobustScaler . **Feature selection algorithms**: SelectKBest, SelectPercentile, SelectUnivariateRegression . **Models**: LinearRegression, RidgeRegression, LassoRegression, DecisionTreeRegression, GaussianProcessRegression . **Export and load pipelines** . **Best for research and custom AutoML**  .
-
-
-
-### Data Annotation & Labeling
-
-
-
-- **[Potato 2.0](https://aclanthology.org/2026.acl-demo.37/)**  
-
-  **Comprehensive annotation platform with AI-in-the-loop support**, open-source, published at ACL 2026  . **39 different annotation task types** with support for text, audio, image, and video modalities . **Robust support for labeling agentic system outputs** — reading common trace formats, live interaction and annotation with agents (chatting, web-browsing, coding) . **AI-assistance features** to help annotators label data more easily . **Agentic AI-in-the-loop workflow** — single human annotator collaborates with LLM through iterative prompt refinement, uncertainty-driven instance selection, and progressive autonomy . **Best for NLP and multimodal data annotation**  .
-
-
-
-- **[AnyLabeling](https://pypi.org/project/anylabeling-gpu/)**  
-
-  **Effortless data labeling with AI support from YOLO and Segment Anything**, open-source  . **Image annotation for polygon, rectangle, circle, line, and point** . **Auto-labeling with YOLOv8 (object detection)** . **Auto-labeling with Segment Anything family**: SAM (ViT-B/L/H), MobileSAM, SAM 2/2.1 (Hiera-Tiny/Small/Base+/Large), and **SAM 3 (ViT-H) for open-vocabulary segmentation with text prompts** . **Text detection, recognition, and KIE labeling** . **Multiple languages available** . **Best for computer vision data labeling**  .
-
-
-
-- **[visionset](https://pypi.org/project/visionset/)**  
-
-  **Computer vision dataset management and annotation platform**, open-source  . **CLI-driven workflow**: project create, schema apply, ingest, batch approve, annotate, batch complete, release publish, export . **Export to YOLO, COCO, VOC, classification, and lane formats** . **REST API with OpenAPI contract** . **MCP server with 56 agent tools** for AI-assisted annotation . **Hash-verified releases with train/val/test splits** . **Best for production CV dataset pipelines**  .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Apache Airflow** — Workflow orchestration for ML pipelines .
-
-- **Prefect** — Python-native workflow orchestration .
-
-- **Dagster** — Data orchestration with asset graph .
-
-- **DVC** — Data version control for ML projects .
-
-- **Weights & Biases** — Experiment tracking and visualization (commercial with free tier) .
-
-- **Optuna** — Hyperparameter optimization framework .
-
-- **Ray** — Distributed computing for ML training and serving .
-
-- **BentoML** — Unified model serving framework .
-
-- **KServe** — Kubernetes-native model serving .
-
-- **Evidently** — ML model monitoring and drift detection .
-
-
-
-**Frameworks for building custom ML platform solutions**: Combine **Kubeflow** for Kubernetes-native end-to-end ML lifecycle  . Use **MLflow** or **mlsolid** for experiment tracking and model registry  . Deploy **Feast** for feature store management  . Integrate **MLOX** or **ZebraOps** for lightweight MLOps orchestration  . Use **Potato** or **AnyLabeling** for data annotation  . Choose **P-ML** or **ModelForge** for AutoML  . Note that true enterprise ML platforms with managed infrastructure, automatic scaling, and vendor-supported SLAs (SageMaker, Vertex AI, Azure ML) remain primarily commercial territory; open-source stacks provide strong MLOps, feature store, and AutoML foundations that require integration for complete ML platform deployments.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Machine learning platforms handle sensitive data and model artifacts. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **Total cost of ownership varies significantly** — SageMaker has unpredictable costs due to fragmented pricing, Vertex AI offers cleaner pricing with CUDs, and Azure ML leverages existing Enterprise Agreements  . The most expensive platform is the one your team doesn't know how to optimize  .
-
-- **License considerations**: Kubeflow uses Apache-2.0, MLflow uses Apache-2.0, Feast uses Apache-2.0, ZebraOps uses Apache-2.0, and mlsolid is open-source . Verify licensing against your use case before committing.
-
-- The open-source ecosystem provides strong MLOps, feature store, and AutoML foundations, but **managed infrastructure, automatic scaling, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Machine-Learning-Platform?style=for-the-badge&color=gold" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Machine-Learning-Platform?style=for-the-badge&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Machine-Learning-Platform?style=for-the-badge&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Machine Learning Platform Banner" width="100%" />
+</p>
+
+# 🚀 Awesome Machine Learning Platform Ecosystem
+
+> **A curated, comprehensive directory of Enterprise SaaS Machine Learning Platforms, Open-Source MLOps Infrastructure, Feature Stores, Experiment Tracking, Model Serving, and AutoML Tools.**
 
 ---
 
+## 📌 Keywords & SEO Metadata
+`MLOps` · `Machine Learning Platform` · `AI Infrastructure` · `Model Serving` · `Feature Store` · `Experiment Tracking` · `AutoML` · `Kubeflow` · `MLflow` · `SageMaker` · `Vertex AI` · `Data annotation` · `Self-Hosted AI`
 
+---
 
-**Made for ML engineers, data scientists, and organizations seeking ML platform sovereignty.**  
+## 📅 Last Updated: October 2026
 
-Let's make machine learning platforms more open, transparent, and vendor-neutral.
+This repository tracks notable **commercial machine learning platforms** and **open-source projects** covering the full ML lifecycle — from data prep and experiment tracking to model deployment, monitoring, and governance — without vendor lock-in.
+
+---
+
+## 📑 Table of Contents
+- [📊 Market Insights & Sector Fragmentation](#-market-insights--sector-fragmentation)
+- [🏢 SaaS & Hosted ML Platforms](#-saas--hosted-ml-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🌐 End-to-End MLOps & Orchestration](#-end-to-end-mlops--orchestration)
+  - [📊 Experiment Tracking & Model Registry](#-experiment-tracking--model-registry)
+  - [🧠 Distributed Computing & Training](#-distributed-computing--training)
+  - [📦 Feature Stores & Data Versioning](#-feature-stores--data-versioning)
+  - [🚀 Model Serving & Inference Infrastructure](#-model-serving--inference-infrastructure)
+  - [⚡ AutoML & Model Optimization](#-automl--model-optimization)
+  - [🏷️ Data Annotation & Labeling](#-data-annotation--labeling)
+- [⭐ Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [⚖️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 Market Insights & Sector Fragmentation
+
+> 📈 **Market Size Estimate**: The global Machine Learning & MLOps Platform market size is estimated at **~$35.4 Billion in 2026** and is projected to expand to over **~$120 Billion by 2030** (CAGR ~32.5%).  
+> 🧩 **Sector Fragmentation**: The sector is **moderately fragmented** between hyper-scaler cloud providers (AWS, Azure, Google Cloud) holding dominant compute market share, and specialized enterprise AI platform providers (Databricks, DataRobot, Dataiku, Domino Data Lab) competing fiercely on multi-cloud neutrality, automated governance, and developer productivity.
+
+---
+
+## 🏢 SaaS & Hosted ML Platforms
+
+Below is a curated list of top commercial ML platforms, sorted by **Company Size / Valuation / Revenue** in descending order.
+
+| 🏢 Platform | 💰 Company Valuation / Revenue | 💵 Starting Price | 🎁 Free Tier / Trial Limit | 🎯 Key Features & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/products/machine-learning/)** | ~$3.1 Trillion Market Cap *(Azure ~$75B/yr)* | `$0.096/hour` *(Standard_DS1_v2 compute)* | `$200 free credit` (30 days) + 12 months free services | Enterprise ML platform with deep Azure OpenAI integration & Enterprise Agreements. Best for Microsoft-first enterprises. |
+| **[Google Cloud Vertex AI](https://cloud.google.com/vertex-ai)** | ~$2.1 Trillion Market Cap *(GCP ~$40B/yr)* | `$0.045/hour` *(n1-standard-1 node)* | `$300 free credit` (90 days) for new GCP accounts | Unified ML platform deeply tied into BigQuery, AutoML, and custom pipeline tools. Best for data-heavy teams. |
+| **[Amazon SageMaker](https://aws.amazon.com/sagemaker/)** | ~$1.95 Trillion Market Cap *(AWS ~$105B/yr)* | `$0.05/hour` *(ml.t3.medium notebook)* | 2-Month Free Tier *(250h notebook, 50h training, 125h hosting/mo)* | AWS fully managed ML platform covering data labeling, training, tuning, and hosting. Best for AWS-native orgs. |
+| **[Databricks Machine Learning](https://www.databricks.com/)** | ~$43 Billion Valuation *($1.6B+ ARR)* | `$0.07/DBU` *(Databricks Unit serverless compute)* | 14-Day Free Trial *(Full workspace access on cloud of choice)* | Unified Lakehouse data & AI platform built on MLflow & Apache Spark. Best for big-data and Spark workflows. |
+| **[DataRobot AI Platform](https://www.datarobot.com/)** | ~$6.3 Billion Valuation *($300M+ ARR)* | `$99/month` *(Starter plan tier)* | 14-Day Free Trial *(Full access to enterprise AutoML features)* | Enterprise AutoML and AI governance platform. Best for teams wanting automated model building without deep DS teams. |
+| **[Dataiku DSS](https://www.dataiku.com/)** | ~$3.7 Billion Valuation *($250M+ ARR)* | `$499/month` *(Launch Cloud plan)* | 14-Day Cloud Free Trial / Free Community Edition *(Up to 3 users)* | Collaborative data science platform with visual & code workflows. Best for multi-disciplinary analytics teams. |
+| **[Paperspace Gradient](https://www.paperspace.com/)** | ~$3.5 Billion *(DigitalOcean Parent Cap)* | `$8/month` *(Gradient Growth Plan)* | Free Forever Tier *(Free CPU/GPU notebook instances, 6h auto-shutdown)* | Cloud ML platform providing GPU notebooks & model deployment. Best for individual developers & small teams. |
+| **[H2O AI Cloud](https://h2o.ai/)** | ~$1.7 Billion Valuation *($80M+ ARR)* | `$1.25/node-hour` *(Managed Cluster)* | 90-Day Free Trial *($500 included cloud compute credits)* | Enterprise open-core AI platform with AutoML, feature store, and app deployment. Best for open-core enterprise AI. |
+| **[Domino Data Lab](https://www.dominodatalab.com/)** | ~$1.5 Billion Valuation *($100M+ ARR)* | `$0.85/compute-hour` *(Cloud Starter)* | 14-Day Free Trial *($250 included compute credits)* | Enterprise MLOps platform focused on reproducible research & governance. Best for heavily regulated industries. |
+| **[Saturn Cloud](https://saturncloud.io/)** | ~$50 Million Valuation *($10M+ ARR)* | `$0.04/hour` *(Python/Dask compute)* | Free Forever Plan *(30 free compute hours/month, up to 64GB RAM)* | Cloud data science platform optimized for Dask and parallel computing. Best for scalable Python compute workloads. |
+
+---
+
+## ⚡ Open-Source GitHub Projects
+
+Open-source machine learning platforms and MLOps tools provide high autonomy, transparency, and self-hosted privacy. Below, open-source repositories are sorted by **GitHub Star Count (descending)** within each category.
+
+### 🌐 End-to-End MLOps & Orchestration
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[Apache Airflow](https://github.com/apache/airflow)** | [<img src="https://img.shields.io/github/stars/apache/airflow?style=social&color=white" alt="Stars"/>](https://github.com/apache/airflow/stargazers) | Apache-2.0 | Programmatically author, schedule, and monitor data & ML workflow pipelines. |
+| **[Prefect](https://github.com/PrefectHQ/prefect)** | [<img src="https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white" alt="Stars"/>](https://github.com/PrefectHQ/prefect/stargazers) | Apache-2.0 | Modern Python-native workflow orchestration framework designed for data & ML. |
+| **[Kubeflow](https://github.com/kubeflow/kubeflow)** | [<img src="https://img.shields.io/github/stars/kubeflow/kubeflow?style=social&color=white" alt="Stars"/>](https://github.com/kubeflow/kubeflow/stargazers) | Apache-2.0 | CNCF-graduated cloud-native MLOps platform for Kubernetes pipelines, training & serving. |
+| **[Dagster](https://github.com/dagster-io/dagster)** | [<img src="https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white" alt="Stars"/>](https://github.com/dagster-io/dagster/stargazers) | Apache-2.0 | Data orchestrator for machine learning assets, pipeline testing, and observability. |
+| **[ClearML](https://github.com/allegroai/clearml)** | [<img src="https://img.shields.io/github/stars/allegroai/clearml?style=social&color=white" alt="Stars"/>](https://github.com/allegroai/clearml/stargazers) | Apache-2.0 | Unified open-source MLOps suite: experiment tracking, data management, and orchestration. |
+| **[ZenML](https://github.com/zenml-io/zenml)** | [<img src="https://img.shields.io/github/stars/zenml-io/zenml?style=social&color=white" alt="Stars"/>](https://github.com/zenml-io/zenml/stargazers) | Apache-2.0 | Extensible, production-ready MLOps framework to connect ML tools across clouds. |
+| **[LUML](https://app.luml.ai/)** | [<img src="https://img.shields.io/github/stars/luml-ai/luml?style=social&color=white" alt="Stars"/>](https://github.com/luml-ai/luml/stargazers) | Open-Source | Agentic MLOps & LLMOps platform where engineers and AI agents collaborate on ML pipelines. |
+| **[MLOX](https://github.com/matteospanio/mlox)** | [<img src="https://img.shields.io/github/stars/matteospanio/mlox?style=social&color=white" alt="Stars"/>](https://github.com/matteospanio/mlox/stargazers) | Open-Source | Lightweight, backend-agnostic MLOps orchestration for Docker, Kubernetes, and Native environments. |
+| **[ZebraOps](https://github.com/flexiana/zebraops)** | [<img src="https://img.shields.io/github/stars/flexiana/zebraops?style=social&color=white" alt="Stars"/>](https://github.com/flexiana/zebraops/stargazers) | Apache-2.0 | Local-first, contract-driven open-source MLOps stack for small teams and fast dev-loops. |
+
+---
+
+### 📊 Experiment Tracking & Model Registry
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[MLflow](https://github.com/mlflow/mlflow)** | [<img src="https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white" alt="Stars"/>](https://github.com/mlflow/mlflow/stargazers) | Apache-2.0 | De facto open-source standard for experiment tracking, model registry, and project packaging. |
+| **[Evidently](https://github.com/evidentlyai/evidently)** | [<img src="https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white" alt="Stars"/>](https://github.com/evidentlyai/evidently/stargazers) | Apache-2.0 | Open-source ML model evaluation, data drift detection, and production monitoring library. |
+| **[mlsolid](https://pkg.go.dev/github.com/zeddo123/mlsolid)** | [<img src="https://img.shields.io/github/stars/zeddo123/mlsolid?style=social&color=white" alt="Stars"/>](https://github.com/zeddo123/mlsolid/stargazers) | Open-Source | High-performance Go-based alternative to MLflow backed by Redis & S3 with gRPC SDKs. |
+| **[vmn-exp](https://pypi.org/project/vmn-exp/)** | [<img src="https://img.shields.io/github/stars/vmn-exp/vmn-exp?style=social&color=white" alt="Stars"/>](https://github.com/vmn-exp/vmn-exp/stargazers) | Open-Source | Lightweight experiment tracking and snapshotting tool built on vmn with web dashboard support. |
+
+---
+
+### 🧠 Distributed Computing & Training
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[Ray](https://github.com/ray-project/ray)** | [<img src="https://img.shields.io/github/stars/ray-project/ray?style=social&color=white" alt="Stars"/>](https://github.com/ray-project/ray/stargazers) | Apache-2.0 | Unified framework for scaling AI and Python applications (Ray Train, Ray Serve, Ray Data). |
+
+---
+
+### 📦 Feature Stores & Data Versioning
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[DVC](https://github.com/iterative/dvc)** | [<img src="https://img.shields.io/github/stars/iterative/dvc?style=social&color=white" alt="Stars"/>](https://github.com/iterative/dvc/stargazers) | Apache-2.0 | Git-for-data: Data version control and machine learning experiment management tool. |
+| **[Feast](https://github.com/feast-dev/feast)** | [<img src="https://img.shields.io/github/stars/feast-dev/feast?style=social&color=white" alt="Stars"/>](https://github.com/feast-dev/feast/stargazers) | Apache-2.0 | The leading open-source feature store for serving features consistently across training and inference. |
+
+---
+
+### 🚀 Model Serving & Inference Infrastructure
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[BentoML](https://github.com/bentoml/BentoML)** | [<img src="https://img.shields.io/github/stars/bentoml/BentoML?style=social&color=white" alt="Stars"/>](https://github.com/bentoml/BentoML/stargazers) | Apache-2.0 | Unified model serving framework for building scalable ML and LLM microservices. |
+| **[KServe](https://github.com/kserve/kserve)** | [<img src="https://img.shields.io/github/stars/kserve/kserve?style=social&color=white" alt="Stars"/>](https://github.com/kserve/kserve/stargazers) | Apache-2.0 | Standardized serverless model inference platform built natively for Kubernetes. |
+| **[Seldon Core](https://github.com/SeldonIO/seldon-core)** | [<img src="https://img.shields.io/github/stars/SeldonIO/seldon-core?style=social&color=white" alt="Stars"/>](https://github.com/SeldonIO/seldon-core/stargazers) | Apache-2.0 | Enterprise ML model deployment on Kubernetes with explainability and audit logging. |
+
+---
+
+### ⚡ AutoML & Model Optimization
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[Optuna](https://github.com/optuna/optuna)** | [<img src="https://img.shields.io/github/stars/optuna/optuna?style=social&color=white" alt="Stars"/>](https://github.com/optuna/optuna/stargazers) | MIT | Automatic hyperparameter optimization software framework with define-by-run API. |
+| **[P-ML](https://github.com/HuuPhuoc2411/P-ML)** | [<img src="https://img.shields.io/github/stars/HuuPhuoc2411/P-ML?style=social&color=white" alt="Stars"/>](https://github.com/HuuPhuoc2411/P-ML/stargazers) | Open-Source | AutoML framework converting classical ML models into optimized C++ libraries for Microcontrollers (Arduino/ESP32). |
+| **[ModelForge](https://pypi.org/project/autoforge-engine/)** | [<img src="https://img.shields.io/github/stars/autoforge-engine/modelforge?style=social&color=white" alt="Stars"/>](https://github.com/autoforge-engine/modelforge/stargazers) | Open-Source | Transparent, local-first AutoML experimentation for reproducible regression and classification. |
+| **[NiaAML](https://pypi.org/project/NiaAML/)** | [<img src="https://img.shields.io/github/stars/firefly-cpp/NiaAML?style=social&color=white" alt="Stars"/>](https://github.com/firefly-cpp/NiaAML/stargazers) | MIT | Python automated machine learning framework utilizing nature-inspired optimization algorithms. |
+
+---
+
+### 🏷️ Data Annotation & Labeling
+
+| Project | Stars | License | Key Description & Focus |
+| :--- | :---: | :---: | :--- |
+| **[AnyLabeling](https://github.com/vietns2510/anylabeling)** | [<img src="https://img.shields.io/github/stars/vietns2510/anylabeling?style=social&color=white" alt="Stars"/>](https://github.com/vietns2510/anylabeling/stargazers) | GPL-3.0 | Effortless data labeling with AI support from YOLO and Segment Anything (SAM 2/3). |
+| **[Potato 2.0](https://aclanthology.org/2026.acl-demo.37/)** | [<img src="https://img.shields.io/github/stars/potato-annotation/potato?style=social&color=white" alt="Stars"/>](https://github.com/potato-annotation/potato/stargazers) | Open-Source | AI-in-the-loop data annotation platform with 39 task types for text, audio, image & agentic trace labeling. |
+| **[visionset](https://pypi.org/project/visionset/)** | [<img src="https://img.shields.io/github/stars/visionset/visionset?style=social&color=white" alt="Stars"/>](https://github.com/visionset/visionset/stargazers) | Open-Source | CLI & REST API-driven computer vision dataset management, MCP agent tools, and hash-verified releases. |
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Machine-Learning-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Machine-Learning-Platform&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these simple guidelines:
+
+1. **Fork the Repository** to your own GitHub account.
+2. Edit `README.md` to add or update relevant tools.
+3. Ensure entries adhere to the table structure (Name, Pricing/Stars, License/Valuation, Descriptions).
+4. Keep descriptions concise, factual, and neutral.
+5. Submit a **Pull Request** with a brief summary of additions!
+
+---
+
+## 💖 Support & Community
+
+If you found this curated list of machine learning platforms useful, please consider giving it a ⭐ **Star** on GitHub, sharing it with fellow MLOps engineers, or sponsoring the maintainer!
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/></a>
+</p>
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement of any vendor or tool.
+- Machine learning platforms process sensitive datasets and proprietary models; proper access security, privacy governance, and infrastructure hardening are required.
+- **Total Cost of Ownership (TCO)** varies greatly depending on workload patterns: hyperscalers charge for idle compute/notebooks, while open-source tools require DevOps integration and maintenance effort.
