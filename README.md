@@ -74,11 +74,11 @@ Below is a curated list of top commercial ML platforms, sorted by **Company Size
 
 ## ⚡ Open-Source GitHub Projects
 
-Open-source machine learning platforms and MLOps tools provide high autonomy, transparency, and self-hosted privacy. Below, open-source repositories are sorted by **GitHub Star Count (descending)** within each category.
+Open-source machine learning platforms and MLOps tools provide high autonomy, transparency, and self-hosted privacy. Below, open-source repositories are sorted by **GitHub Stars_Count (descending)** within each category.
 
 ### 🌐 End-to-End MLOps & Orchestration
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[Apache Airflow](https://github.com/apache/airflow)** | [<img src="https://img.shields.io/github/stars/apache/airflow?style=social&color=white" alt="Stars"/>](https://github.com/apache/airflow/stargazers) | Apache-2.0 | Programmatically author, schedule, and monitor data & ML workflow pipelines. |
 | **[Prefect](https://github.com/PrefectHQ/prefect)** | [<img src="https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white" alt="Stars"/>](https://github.com/PrefectHQ/prefect/stargazers) | Apache-2.0 | Modern Python-native workflow orchestration framework designed for data & ML. |
@@ -94,7 +94,7 @@ Open-source machine learning platforms and MLOps tools provide high autonomy, tr
 
 ### 📊 Experiment Tracking & Model Registry
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[MLflow](https://github.com/mlflow/mlflow)** | [<img src="https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white" alt="Stars"/>](https://github.com/mlflow/mlflow/stargazers) | Apache-2.0 | De facto open-source standard for experiment tracking, model registry, and project packaging. |
 | **[Evidently](https://github.com/evidentlyai/evidently)** | [<img src="https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white" alt="Stars"/>](https://github.com/evidentlyai/evidently/stargazers) | Apache-2.0 | Open-source ML model evaluation, data drift detection, and production monitoring library. |
@@ -105,7 +105,7 @@ Open-source machine learning platforms and MLOps tools provide high autonomy, tr
 
 ### 🧠 Distributed Computing & Training
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[Ray](https://github.com/ray-project/ray)** | [<img src="https://img.shields.io/github/stars/ray-project/ray?style=social&color=white" alt="Stars"/>](https://github.com/ray-project/ray/stargazers) | Apache-2.0 | Unified framework for scaling AI and Python applications (Ray Train, Ray Serve, Ray Data). |
 
@@ -113,7 +113,7 @@ Open-source machine learning platforms and MLOps tools provide high autonomy, tr
 
 ### 📦 Feature Stores & Data Versioning
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[DVC](https://github.com/iterative/dvc)** | [<img src="https://img.shields.io/github/stars/iterative/dvc?style=social&color=white" alt="Stars"/>](https://github.com/iterative/dvc/stargazers) | Apache-2.0 | Git-for-data: Data version control and machine learning experiment management tool. |
 | **[Feast](https://github.com/feast-dev/feast)** | [<img src="https://img.shields.io/github/stars/feast-dev/feast?style=social&color=white" alt="Stars"/>](https://github.com/feast-dev/feast/stargazers) | Apache-2.0 | The leading open-source feature store for serving features consistently across training and inference. |
@@ -122,7 +122,7 @@ Open-source machine learning platforms and MLOps tools provide high autonomy, tr
 
 ### 🚀 Model Serving & Inference Infrastructure
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[BentoML](https://github.com/bentoml/BentoML)** | [<img src="https://img.shields.io/github/stars/bentoml/BentoML?style=social&color=white" alt="Stars"/>](https://github.com/bentoml/BentoML/stargazers) | Apache-2.0 | Unified model serving framework for building scalable ML and LLM microservices. |
 | **[KServe](https://github.com/kserve/kserve)** | [<img src="https://img.shields.io/github/stars/kserve/kserve?style=social&color=white" alt="Stars"/>](https://github.com/kserve/kserve/stargazers) | Apache-2.0 | Standardized serverless model inference platform built natively for Kubernetes. |
@@ -132,7 +132,7 @@ Open-source machine learning platforms and MLOps tools provide high autonomy, tr
 
 ### ⚡ AutoML & Model Optimization
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[Optuna](https://github.com/optuna/optuna)** | [<img src="https://img.shields.io/github/stars/optuna/optuna?style=social&color=white" alt="Stars"/>](https://github.com/optuna/optuna/stargazers) | MIT | Automatic hyperparameter optimization software framework with define-by-run API. |
 | **[P-ML](https://github.com/HuuPhuoc2411/P-ML)** | [<img src="https://img.shields.io/github/stars/HuuPhuoc2411/P-ML?style=social&color=white" alt="Stars"/>](https://github.com/HuuPhuoc2411/P-ML/stargazers) | Open-Source | AutoML framework converting classical ML models into optimized C++ libraries for Microcontrollers (Arduino/ESP32). |
@@ -143,7 +143,7 @@ Open-source machine learning platforms and MLOps tools provide high autonomy, tr
 
 ### 🏷️ Data Annotation & Labeling
 
-| Project | Stars | License | Key Description & Focus |
+| Project | GitHub_Stars | License | Key Description & Focus |
 | :--- | :---: | :---: | :--- |
 | **[AnyLabeling](https://github.com/vietns2510/anylabeling)** | [<img src="https://img.shields.io/github/stars/vietns2510/anylabeling?style=social&color=white" alt="Stars"/>](https://github.com/vietns2510/anylabeling/stargazers) | GPL-3.0 | Effortless data labeling with AI support from YOLO and Segment Anything (SAM 2/3). |
 | **[Potato 2.0](https://aclanthology.org/2026.acl-demo.37/)** | [<img src="https://img.shields.io/github/stars/potato-annotation/potato?style=social&color=white" alt="Stars"/>](https://github.com/potato-annotation/potato/stargazers) | Open-Source | AI-in-the-loop data annotation platform with 39 task types for text, audio, image & agentic trace labeling. |
